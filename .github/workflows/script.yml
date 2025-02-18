@@ -17,5 +17,8 @@ jobs:
         with:
           python-version: '3.9'
 
+      - name: Installer les dépendances
+        run: pip install pandas openpyxl
+
       - name: Exécuter le script
         run: python mon_script.py
